@@ -18,6 +18,12 @@
 
             var result = await handler.Send(new SayHello());
             Console.WriteLine(result.Speech);
+            
+            result = await handler
+                .With(new Spanish())
+                .Send(new SayHello());
+            
+            Console.WriteLine(result.Speech);
         }
     }
 }

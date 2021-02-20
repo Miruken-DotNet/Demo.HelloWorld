@@ -1,14 +1,15 @@
 namespace HelloWorld
 {
-    using System;
     using Miruken.Callback;
 
     public class SpeechHandler
     {
         [Handles]
-        public SpeechResult SayHello(SayHello message)
+        public SpeechResult SayHello(SayHello sayHello, [Optional] ILanguage language)
         {
-            return new SpeechResult("Hello, World!");
+            const string phrase = "Hello, World!";
+            var speech = language?.Translate(phrase) ?? phrase;
+            return new SpeechResult(speech);
         }
     }
 }
