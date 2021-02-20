@@ -22,7 +22,9 @@
             result = await handler
                 .With(new Spanish())
                 .Send(new SayHello());
-            
+            Console.WriteLine(result.Speech);
+
+            result = await handler.Send(new ExchangePleasantry());
             Console.WriteLine(result.Speech);
         }
     }
