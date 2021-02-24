@@ -5,10 +5,10 @@ namespace HelloWorld
 
     public class SpeechHandler
     {
-        [Handles]
-        public SpeechResult SayHello(SayHello message)
-        {
-            return new SpeechResult("Hello, World!");
-        }
+        // [Handles]
+        // public SpeechResult SayHello(SayHello message)
+        // {
+        //     return new SpeechResult("Hello, World!");
+        // }
     }
 }

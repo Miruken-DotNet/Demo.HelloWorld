@@ -16,8 +16,8 @@
                     .PublicSources(sources => sources.FromEntryAssembly())
                 ).Build();
 
-            var result = await handler.Send(new SayHello());
-            Console.WriteLine(result.Speech);
+            // var result = await handler.Send(new SayHello());
+            // Console.WriteLine(result.Speech);
         }
     }
 }
