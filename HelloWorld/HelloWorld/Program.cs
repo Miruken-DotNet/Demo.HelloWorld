@@ -8,12 +8,12 @@
     {
         static void Main(string[] args)
         {
-            var handler = new ServiceCollection()
-                .AddMiruken(configure => configure
-                    .PublicSources(sources => sources.FromEntryAssembly())
-                ).Build();
-
-            handler.Handle(new SayHello());
+            // var handler = new ServiceCollection()
+            //     .AddMiruken(configure => configure
+            //         .PublicSources(sources => sources.FromEntryAssembly())
+            //     ).Build();
+            //
+            // handler.Handle(new SayHello());
         }
     }
 }

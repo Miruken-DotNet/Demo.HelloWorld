@@ -1,7 +1,6 @@
 namespace HelloWorld
 {
-    public class SayHello
-    {
-        
-    }
+    // public class SayHello
+    // {
+    // }
 }
