@@ -6,9 +6,9 @@ namespace HelloWorld
     public class SpeechHandler
     {
         [Handles]
-        public void SayHello(SayHello message)
+        public SpeechResult SayHello(SayHello message)
         {
-            Console.WriteLine("Hello, World!");  
+            return new SpeechResult("Hello, World!");
         }
     }
 }
